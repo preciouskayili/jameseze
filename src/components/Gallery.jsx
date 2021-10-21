@@ -22,7 +22,7 @@ const Gallery = () => {
           <div className="col-md-10 mx-auto mt-5">
             <div className="row">
               {Data.map((d) => (
-                <div className="col-md-4 mb-4 mb-lg-0">
+                <div className="col-lg-4 col-md-6 mb-4 mb-lg-0">
                   <div class="bg-image hover-zoom">
                     <img
                       src={require(`./assets/img/${d.img}`).default}
