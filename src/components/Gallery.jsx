@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "./Navbar";
 import { SRLWrapper } from "simple-react-lightbox";
 import Data from "./data/gallery.json";
+import Footer from "./Footer";
 
 const options = {
   caption: {
@@ -13,7 +14,7 @@ const Gallery = () => {
     <div>
       <Navbar />
       {/* Gallery */}
-      <div className="container mt-5">
+      <div className="container mt-5 mb-5">
         <h1 className="font-weight-bold">Gallery</h1>
         <small className="font-weight-bold mb-5">
           * Click on an image to view in full screen
@@ -41,6 +42,7 @@ const Gallery = () => {
           </div>
         </SRLWrapper>
       </div>
+      <Footer />
     </div>
   );
 };

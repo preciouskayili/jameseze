@@ -29,10 +29,7 @@ const Navbar = () => {
           {/* Collapsible wrapper */}
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             {/* Navbar brand */}
-            <NavLink
-              className="navbar-brand mt-2 mt-lg-0 text-danger"
-              to="/home"
-            >
+            <NavLink className="navbar-brand mt-2 mt-lg-0 text-danger" to="/">
               James Eze
             </NavLink>
             {/* Left links */}

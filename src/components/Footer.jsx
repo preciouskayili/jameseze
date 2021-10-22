@@ -105,7 +105,11 @@ export default function Footer() {
         {/* Copyright */}
         <div
           className="text-center p-4"
-          style={{ backgroundColor: "rgba(0, 0, 0, 0.05)" }}
+          style={{
+            backgroundColor: "rgba(0, 0, 0, 0.05)",
+            borderTopRightRadius: "1rem",
+            borderTopLeftRadius: "1rem",
+          }}
         >
           &copy; {new Date().getFullYear()} Copyright:
           <a
