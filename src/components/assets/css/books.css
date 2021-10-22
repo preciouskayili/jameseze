@@ -38,3 +38,7 @@ select:focus {
   -webkit-appearance: none;
   box-shadow: none !important;
 }
+
+.brand {
+  font-family: "Great Vibes", cursive;
+}

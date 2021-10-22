@@ -10,7 +10,7 @@ const BookStore = () => {
 
       <div className="cover">
         <h1 className="font-weight-bold text-light">Search books</h1>
-        <p className="text-white subtitle">
+        <p className="text-white text-center subtitle">
           Search through our enriching library of books
         </p>
       </div>
