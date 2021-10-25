@@ -33,16 +33,16 @@ const Home = () => {
                   className="navbar-brand text-white"
                   style={{ fontSize: "25px" }}
                 >
-                  James Eze
+                  James Ngwu Eze
                 </span>
               </h1>
               <p className="text-light">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Sapiente dolore quos non natus ipsa libero aliquid dolor. Nobis
-                beatae tenetur impedit quasi vero quibusdam! Asperiores tenetur
-                harum quo deleniti mollitia praesentium sunt. Illum dolorum
-                itaque saepe delectus sapiente. Pariatur repellat corporis aut
-                dolorum asperiores sint, est velit inventore quas tenetur?
+                James Eze was born in Enugu, southeasr Nigeria, shortly after
+                the Biafran War. He was the pioneer Literary Editor of Sunday
+                Sun. As Head of External Communications at Fidelity Bank, He
+                worked in partnership with the novelist Chimamanda Adichie to
+                begin her popular international Creative Writing Workshop
+                series.
               </p>
             </div>
           </div>

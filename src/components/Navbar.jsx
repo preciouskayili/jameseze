@@ -30,7 +30,7 @@ const Navbar = () => {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             {/* Navbar brand */}
             <NavLink className="navbar-brand mt-2 mt-lg-0 text-danger" to="/">
-              James Eze
+              James Ngwu Eze
             </NavLink>
             {/* Left links */}
             <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
@@ -38,6 +38,33 @@ const Navbar = () => {
                 <NavLink className="nav-link" activeClassName="active" to="/">
                   Home
                 </NavLink>
+              </li>
+              <li className="nav-item dropdown">
+                <NavLink
+                  className="nav-link dropdown-toggle"
+                  to="#"
+                  id="navbarDropdownMenuLink"
+                  role="button"
+                  data-mdb-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Media
+                </NavLink>
+                <ul
+                  className="dropdown-menu"
+                  aria-labelledby="navbarDropdownMenuLink"
+                >
+                  <li>
+                    <NavLink className="dropdown-item" to="/video">
+                      Video
+                    </NavLink>
+                  </li>
+                  <li>
+                    <NavLink className="dropdown-item" to="/audio">
+                      Audio
+                    </NavLink>
+                  </li>
+                </ul>
               </li>
               <li className="nav-item">
                 <NavLink

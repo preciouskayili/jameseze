@@ -44,7 +44,7 @@ export default function Footer() {
               {/* Grid column */}
               <div className="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
                 {/* Content */}
-                <h6 className="brand fw-bold mb-4">James Eze</h6>
+                <h6 className="brand fw-bold mb-4">James Ngwu Eze</h6>
                 <p>
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                   Laudantium, cumque. Maiores ab ea sapiente.
