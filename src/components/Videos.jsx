@@ -1,10 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import Navbar from "./Navbar";
 import Player from "./Player";
 import Footer from "./Footer";
 
 const Videos = () => {
-  const [id, setId] = useState("");
   return (
     <div>
       <Navbar />
