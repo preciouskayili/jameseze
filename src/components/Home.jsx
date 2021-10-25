@@ -178,9 +178,9 @@ const Home = () => {
               />
               <p className="mt-4 font-weight-bold">
            
-               Awka, Anambra state
+              Contact us
              </p>
-              <p>Kuru, Trade center</p>
+              <p>Awka, Anambra state</p>
             </div>
           </div>
           <div className="col-md-7">
