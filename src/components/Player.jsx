@@ -2,15 +2,13 @@ import React from "react";
 
 const Player = ({ id }) => {
   return (
-    <iframe
-      src={`https://www.youtube.com/embed/${id}`}
-      frameBorder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowFullScreen
-      title="Embedded youtube"
-      style={{ height: "400px", borderRadius: "1rem" }}
-      className="w-100"
-    />
+    <video className="ratio 16x9" style={{ borderRadius: "1rem" }} controls>
+      <source
+        className="w-100"
+        src={require("./assets/video/there.mp4").default}
+        type="video/mp4"
+      />
+    </video>
   );
 };
 

@@ -3,7 +3,7 @@
     "name": "A fistful of questions",
     "singer": "James Eze ft. Dallie",
     "cover": "cover3.jpeg",
-    "musicSrc": "'Afistfulofquestion').default"
+    "musicSrc": "Afistfulofquestion.mp3"
   },
   {
     "name": "Color of my skin",
@@ -21,6 +21,6 @@
     "name": "Our Love",
     "singer": "Mikkie",
     "cover": "dispossedcover.jpeg",
-    "music": "OURLOVEfinal.mp3"
+    "musicSrc": "OURLOVEfinal.mp3"
   }
 ]

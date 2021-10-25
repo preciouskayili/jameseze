@@ -2,15 +2,55 @@ import React from "react";
 import Navbar from "./Navbar";
 import Player from "./Player";
 import Footer from "./Footer";
+import SearchIcon from "@mui/icons-material/Search";
+import VideoPlaylist from "./data/videos.json";
 
 const Videos = () => {
   return (
     <div>
       <Navbar />
+      <div
+        className="col-md-9 mt-3 mb-3 mx-auto"
+        style={{ marginTop: "-1rem" }}
+      >
+        <div className="card p-3">
+          <div className="input-group rounded">
+            <span className="input-group-text border-0" id="search-addon">
+              <SearchIcon style={{ color: "#ccc" }} />
+            </span>
+            <input
+              type="search"
+              className="form-control border-0"
+              placeholder="Search"
+              aria-label="Search"
+              aria-describedby="search-addon"
+            />
+            <select
+              style={{ border: "0px", backgroundColor: "#fff" }}
+              className="form-control"
+            >
+              <option selected disabled>
+                Choose a category...
+              </option>
+              <option>Poems</option>
+              <option>Books</option>
+            </select>
+          </div>
+        </div>
+      </div>
       <div className="container-fluid mt-5">
         <div className="row">
           <div className="col-md-8">
             <Player id="6whHTP6L2Is" />
+            <div className="card mb-5">
+              <div className="card-body">
+                <h3 className="font-weight-bold mt-3 text-dark">
+                  {VideoPlaylist[0].title}
+                </h3>
+                <p className="font-weight-bold">{VideoPlaylist[0].author}</p>
+                <p>{VideoPlaylist[0].desc}</p>
+              </div>
+            </div>
           </div>
 
           <div className="col-md-4">

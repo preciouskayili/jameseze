@@ -37,7 +37,7 @@ const Home = () => {
                 </span>
               </h1>
               <p className="text-light">
-                James Eze was born in Enugu, southeasr Nigeria, shortly after
+                James Eze was born in Enugu, southeast Nigeria, shortly after
                 the Biafran War. He was the pioneer Literary Editor of Sunday
                 Sun. As Head of External Communications at Fidelity Bank, He
                 worked in partnership with the novelist Chimamanda Adichie to
@@ -58,10 +58,12 @@ const Home = () => {
                 Poetry of innocence, transparency and atonement
               </p>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Repellendus, quis sit deleniti ipsam ea eum autem illo, animi
-                natus ad obcaecati? Blanditiis rerum adipisci, omnis suscipit
-                voluptatem recusandae nobis accusantium!
+                He is the curator of Under African Skies which hosts a Flutter
+                in the Woods; a yearly evening of poetry and songs in Awka,
+                Anambra state. He also co-founded The Return to Idoto, a poetry
+                festival in honour of Christopher Okigbo. His poems have
+                appeared in Camouflage: Best of Contemporary Writing from
+                Nigeria.
               </p>
             </div>
             <div className="col-md-5">

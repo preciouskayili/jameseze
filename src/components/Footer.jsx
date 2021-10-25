@@ -46,8 +46,8 @@ export default function Footer() {
                 {/* Content */}
                 <h6 className="brand fw-bold mb-4">James Ngwu Eze</h6>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Laudantium, cumque. Maiores ab ea sapiente.
+                  James Eze was born in Enugu, southeast Nigeria, shortly after
+                  the Biafran War.
                 </p>
               </div>
               {/* Grid column */}
@@ -78,6 +78,16 @@ export default function Footer() {
                   <Link to="/gallery" className="text-reset">
                     Gallery
                   </Link>
+                </p>
+                <p>
+                  <a
+                    href="https://instagram.com/udala_dispossessed?utm_medium=copy_link"
+                    className="text-reset"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Udala Nation
+                  </a>
                 </p>
               </div>
               {/* Grid column */}

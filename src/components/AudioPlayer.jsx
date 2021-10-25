@@ -3,10 +3,17 @@ import "./assets/css/player.css";
 import ReactJkMusicPlayer from "react-jinke-music-player";
 import "react-jinke-music-player/assets/index.css";
 
-const AudioPlayer = ({ playlists }) => {
+const AudioPlayer = ({ songData }) => {
   const options = {
     // audio lists model
-    audioLists: playlists,
+    audioLists: [
+      {
+        name: songData[0].name,
+        cover: require(`./assets/img/${songData[0].cover}`).default,
+        singer: songData[0].singer,
+        musicSrc: require(`./assets/audio/${songData[0].musicSrc}`).default,
+      },
+    ],
 
     defaultPlayIndex: 0,
     theme: "auto",
@@ -50,6 +57,7 @@ const AudioPlayer = ({ playlists }) => {
     loadAudioErrorPlayNext: true,
 
     autoHiddenCover: false,
+    responsive: false,
 
     // Audio volume with fade in and fade out [type `{ fadeIn: number, fadeOut: number }` default `{ fadeIn: 0, fadeOut: 0 }`]
     volumeFade: {
