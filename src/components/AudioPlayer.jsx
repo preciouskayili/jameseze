@@ -1,19 +1,12 @@
-import React, { useState } from "react";
+import React from "react";
 import "./assets/css/player.css";
 import ReactJkMusicPlayer from "react-jinke-music-player";
 import "react-jinke-music-player/assets/index.css";
 
-const AudioPlayer = () => {
-  const [track, setTrack] = useState("./assets/audio/Colorofmyskin.mp3");
+const AudioPlayer = ({ playlists }) => {
   const options = {
     // audio lists model
-    audioLists: [
-      {
-        cover: require("./assets/img/cover.jpg"),
-        name: "Color of My Skin",
-        musicSrc: require(`${track}`).default,
-      },
-    ],
+    audioLists: playlists,
 
     defaultPlayIndex: 0,
     theme: "auto",
@@ -57,10 +50,6 @@ const AudioPlayer = () => {
     loadAudioErrorPlayNext: true,
 
     autoHiddenCover: false,
-
-    responsive: true,
-
-    mobileMediaQuery: "(max-width: 1024px)",
 
     // Audio volume with fade in and fade out [type `{ fadeIn: number, fadeOut: number }` default `{ fadeIn: 0, fadeOut: 0 }`]
     volumeFade: {

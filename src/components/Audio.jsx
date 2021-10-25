@@ -1,14 +1,14 @@
 import React from "react";
 import AudioPlayer from "./AudioPlayer";
 import Navbar from "./Navbar";
-import Footer from "./Footer";
 import SearchIcon from "@mui/icons-material/Search";
+import Playlists from "./data/playlist.json";
 const Audio = () => {
   return (
     <>
       <Navbar />
       <div
-        className="col-md-6 mt-3 mb-5 mx-auto"
+        className="col-md-6 mt-5 mb-5 mx-auto"
         style={{ marginTop: "-1rem" }}
       >
         <div className="card p-3">
@@ -37,29 +37,31 @@ const Audio = () => {
         </div>
       </div>
 
-      <div className="container">
+      <div className="container mb-5">
         <div className="row">
-          <div className="col-md-3">
-            <div className="card">
-              <div className="card-img-top">
-                <img
-                  src={require("./assets/img/disposed.jpeg").default}
-                  className="w-100 img-responsive"
-                  style={{ objectFit: "cover" }}
-                  alt=""
-                />
-              </div>
-              <div className="card-body">
-                <div className="card-title">
-                  <h4 className="font-weight-bold">James Eze</h4>
-                  <p>Dispossessed</p>
+          {Playlists.map((pl) => (
+            <div className="col-md-3 mb-3">
+              <div className="card">
+                <div className="card-img-top hover-zoom">
+                  <img
+                    src={require(`./assets/img/${pl.cover}`).default}
+                    className="w-100 img-responsive"
+                    style={{ objectFit: "cover", height: "13rem" }}
+                    alt=""
+                  />
+                </div>
+                <div className="card-body">
+                  <div className="card-title">
+                    <h4 className="font-weight-bold">{pl.singer}</h4>
+                    <p>{pl.name}</p>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
+          ))}
         </div>
       </div>
-      <AudioPlayer />
+      <AudioPlayer playlists={Playlists} />
     </>
   );
 };

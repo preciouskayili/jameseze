@@ -1,0 +1,26 @@
+[
+  {
+    "name": "A fistful of questions",
+    "singer": "James Eze ft. Dallie",
+    "cover": "cover3.jpeg",
+    "musicSrc": "'Afistfulofquestion').default"
+  },
+  {
+    "name": "Color of my skin",
+    "singer": "Dallie",
+    "cover": "disposed.jpeg",
+    "musicSrc": "Colorofmyskin.mp3"
+  },
+  {
+    "name": "I Found Love",
+    "singer": "Dallie",
+    "cover": "gallery2.jpeg",
+    "musicSrc": "IfoundLovenew.mp3"
+  },
+  {
+    "name": "Our Love",
+    "singer": "Mikkie",
+    "cover": "dispossedcover.jpeg",
+    "music": "OURLOVEfinal.mp3"
+  }
+]
