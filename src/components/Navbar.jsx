@@ -24,7 +24,7 @@ const Navbar = () => {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <i className="fa fas-bars"></i>
+            <i className="fa fa-bars"></i>
           </button>
           {/* Navbar brand */}
           <NavLink className="navbar-brand mt-2 mt-lg-0 text-danger" to="/">
