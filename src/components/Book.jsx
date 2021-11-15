@@ -10,7 +10,7 @@ const Book = ({ match }) => {
   useEffect(() => {
     WebViewer(
       {
-        licenseKey: "mBWch5nEpdkZRP8bBat0",
+        licenseKey: "r7C3u5BIda3iTElCccoq",
         path: "/lib",
         initialDoc: `${BookData[match.params.id - 1].url}`,
       },
