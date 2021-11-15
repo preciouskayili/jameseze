@@ -52,7 +52,7 @@ const Book = ({ match }) => {
               to={`/book/${match.params.id}`}
               className="navbar-brand mt-2 mt-lg-0 text-danger"
             >
-              The Love Song
+              {BookData[match.params.id - 1].name}
             </Link>
           </div>
         </div>
