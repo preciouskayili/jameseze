@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "name": "I Found Love",
+    "author": "James Eze",
+    "url": "/files/ifoundlove.pdf",
+    "cover": "dispossedcover.jpeg"
+  },
+  {
+    "id": 2,
+    "name": "Love Song",
+    "author": "James Eze",
+    "url": "/files/lovesong.pdf",
+    "cover": "disposed.jpeg"
+  },
+  {
+    "id": 3,
+    "name": "Tears",
+    "author": "James Eze",
+    "url": "/files/tears.pdf",
+    "cover": "gallery1.jpeg"
+  }
+]

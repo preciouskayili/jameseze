@@ -3,6 +3,9 @@ import Navbar from "./Navbar";
 import "./assets/css/books.css";
 import SearchIcon from "@mui/icons-material/Search";
 import Footer from "./Footer";
+import { Link } from "react-router-dom";
+import BookData from "./data/books.json";
+
 const BookStore = () => {
   return (
     <div>
@@ -18,7 +21,7 @@ const BookStore = () => {
       <div className="container mb-3">
         <div className="col-md-6 mx-auto" style={{ marginTop: "-1rem" }}>
           <div className="card p-3">
-            <div className="input-group rounded">
+            <div className="input-group rounded-3">
               <span className="input-group-text border-0" id="search-addon">
                 <SearchIcon style={{ color: "#ccc" }} />
               </span>
@@ -33,7 +36,7 @@ const BookStore = () => {
                 style={{ border: "0px", backgroundColor: "#fff" }}
                 className="form-control"
               >
-                <option selected disabled>
+                <option defaultValue disabled>
                   Choose a category...
                 </option>
                 <option>Poems</option>
@@ -56,65 +59,24 @@ const BookStore = () => {
         <h2 className="font-weight-bold mb-4">Library</h2>
 
         <div className="row">
-          <div className="col-lg-4 col-md-12 mb-md-5">
-            <div className="card shadow-none">
-              <div className="card-img-top">
-                <div class="bg-image hover-zoom">
-                  <img
-                    src={require("./assets/img/dispossedcover.jpeg").default}
-                    className="rounded shadow"
-                    alt="Dispossed"
-                    style={{
-                      width: "300px",
-                      height: "399px",
-                      objectFit: "cover",
-                    }}
-                  />
+          {BookData.map((bd) => (
+            <div className="col-lg-4 col-md-6" key={bd.id}>
+              <Link to={`book/${bd.id}`}>
+                <div className="card rounded-3 book-card">
+                  <div className="card-body p-3" style={{ userSelect: "none" }}>
+                    <img
+                      src={require(`./assets/img/${bd.cover}`).default}
+                      alt="Book cover"
+                      style={{ height: "22rem", objectFit: "cover" }}
+                      className="img-responsive w-100 rounded-3"
+                    />
+                    <h4 className="text font-weight-bold pt-3">{bd.name}</h4>
+                    <p className="text-muted">{bd.author}</p>
+                  </div>
                 </div>
-              </div>
+              </Link>
             </div>
-
-            <div className="card shadow-none">
-              <div className="card-body">
-                <h4>Dispossed</h4>
-                <small className="text-muted">James Eze</small>
-                <br />
-                <small className="font-weight-bold text-muted">NGN1000</small>
-                <br />
-                <button className="btn btn-primary">Buy Now</button>
-              </div>
-            </div>
-          </div>
-
-          <div className="col-lg-4 col-md-12 mb-md-5">
-            <div className="card shadow-none">
-              <div className="card-img-top">
-                <div class="bg-image hover-zoom">
-                  <img
-                    src={require("./assets/img/dispossedcover.jpeg").default}
-                    className="rounded shadow"
-                    alt="Dispossessed"
-                    style={{
-                      width: "300px",
-                      height: "399px",
-                      objectFit: "cover",
-                    }}
-                  />
-                </div>
-              </div>
-            </div>
-
-            <div className="card shadow-none">
-              <div className="card-body">
-                <h4>Dispossessed</h4>
-                <small className="text-muted">James Eze</small>
-                <br />
-                <small className="font-weight-bold text-muted">NGN1000</small>
-                <br />
-                <button className="btn btn-primary">Buy Now</button>
-              </div>
-            </div>
-          </div>
+          ))}
         </div>
       </div>
       <Footer />

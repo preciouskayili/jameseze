@@ -24,14 +24,14 @@ const Navbar = () => {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <i className="fas fa-bars" />
+            <i className="fa fas-bars"></i>
           </button>
+          {/* Navbar brand */}
+          <NavLink className="navbar-brand mt-2 mt-lg-0 text-danger" to="/">
+            James Ngwu Eze
+          </NavLink>
           {/* Collapsible wrapper */}
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
-            {/* Navbar brand */}
-            <NavLink className="navbar-brand mt-2 mt-lg-0 text-danger" to="/">
-              James Ngwu Eze
-            </NavLink>
             {/* Left links */}
             <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
               <li className="nav-item">

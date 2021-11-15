@@ -29,7 +29,7 @@ const Videos = () => {
               style={{ border: "0px", backgroundColor: "#fff" }}
               className="form-control"
             >
-              <option selected disabled>
+              <option defaultValue disabled>
                 Choose a category...
               </option>
               <option>Poems</option>
@@ -42,7 +42,7 @@ const Videos = () => {
         <div className="row">
           <div className="col-md-8">
             <Player id="6whHTP6L2Is" />
-            <div className="card mb-5">
+            <div className="card rounded-3 shadow-none mb-5">
               <div className="card-body">
                 <h3 className="font-weight-bold mt-3 text-dark">
                   {VideoPlaylist[0].title}

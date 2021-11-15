@@ -4,6 +4,7 @@ import BookStore from "./components/BookStore";
 import Gallery from "./components/Gallery";
 import Audio from "./components/Audio";
 import Video from "./components/Videos";
+import Book from "./components/Book";
 import "./App.css";
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
           <Route path="/gallery" exact component={Gallery} />
           <Route path="/audio" exact component={Audio} />
           <Route path="/video" exact component={Video} />
+          <Route path="/book/:id" exact component={Book} />
         </Switch>
       </div>
     </BrowserRouter>

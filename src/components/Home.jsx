@@ -87,7 +87,7 @@ const Home = () => {
               <div className="col-md-8 text-center">
                 <h3 className="mb-3">Pricing to make your reading Effective</h3>
                 <h6 className="subtitle font-weight-normal">
-                  We offer 100% satisafaction and Money back Guarantee
+                  We offer 100% satisfaction and Money back Guarantee
                 </h6>
               </div>
             </div>

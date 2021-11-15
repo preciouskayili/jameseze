@@ -14,22 +14,22 @@ export default function Footer() {
           {/* Left */}
           {/* Right */}
           <div>
-            <a href className="me-4 text-reset">
+            <a href="#!" className="me-4 text-reset">
               <i className="fab fa-facebook-f" />
             </a>
-            <a href className="me-4 text-reset">
+            <a href="#!" className="me-4 text-reset">
               <i className="fab fa-twitter" />
             </a>
-            <a href className="me-4 text-reset">
+            <a href="#!" className="me-4 text-reset">
               <i className="fab fa-google" />
             </a>
-            <a href className="me-4 text-reset">
+            <a href="#!" className="me-4 text-reset">
               <i className="fab fa-instagram" />
             </a>
-            <a href className="me-4 text-reset">
+            <a href="#!" className="me-4 text-reset">
               <i className="fab fa-linkedin" />
             </a>
-            <a href className="me-4 text-reset">
+            <a href="#!" className="me-4 text-reset">
               <i className="fab fa-github" />
             </a>
           </div>
@@ -37,7 +37,7 @@ export default function Footer() {
         </section>
         {/* Section: Social media */}
         {/* Section: Links  */}
-        <section className>
+        <section>
           <div className="container text-center text-md-start mt-5">
             {/* Grid row */}
             <div className="row mt-3">

@@ -3,6 +3,7 @@ import AudioPlayer from "./AudioPlayer";
 import Navbar from "./Navbar";
 import SearchIcon from "@mui/icons-material/Search";
 import Playlists from "./data/playlist.json";
+
 const Audio = () => {
   const [songData, setSongData] = useState([
     {
@@ -32,7 +33,7 @@ const Audio = () => {
           style={{ marginTop: "-1rem" }}
         >
           <div className="card p-3">
-            <div className="input-group rounded">
+            <div className="input-group rounded-3">
               <span className="input-group-text border-0" id="search-addon">
                 <SearchIcon style={{ color: "#ccc" }} />
               </span>
@@ -47,7 +48,7 @@ const Audio = () => {
                 style={{ border: "0px", backgroundColor: "#fff" }}
                 className="form-control"
               >
-                <option selected disabled>
+                <option defaultValue disabled>
                   Choose a category...
                 </option>
                 <option>Poems</option>
@@ -58,18 +59,15 @@ const Audio = () => {
         </div>
 
         <div className="container mb-5">
-          <small className="font-weight-bold mb-2">
-            * Click to add item to playlist
-          </small>
           <div className="row mt-5 mb-3">
             {Playlists.map((pl) => (
-              <div className="col-lg-4 col-md-6 mb-3">
+              <div className="col-lg-4 col-md-6 mb-2">
                 <div
                   className="card ripple"
                   style={{ cursor: "pointer" }}
                   onClick={() => handleClick(pl)}
                 >
-                  <div className="card-img-top hover-zoom">
+                  <div className="card-img-top">
                     <img
                       src={require(`./assets/img/${pl.cover}`).default}
                       className="w-100 img-responsive"
@@ -88,7 +86,7 @@ const Audio = () => {
             ))}
           </div>
         </div>
-        <AudioPlayer songData={songData} />
+        <AudioPlayer className="mt-5" songData={songData} showLyric={true} />
       </div>
     </>
   );
