@@ -96,7 +96,7 @@ export default function Footer() {
                 {/* Links */}
                 <h6 className="text-uppercase fw-bold mb-4">Contact</h6>
                 <p>
-                  <i className="fas fa-home me-3" /> Jos, Plateau State, NG
+                  <i className="fas fa-home me-3" /> Awka, Anambra state
                 </p>
                 <p>
                   <i className="fas fa-envelope me-3" />

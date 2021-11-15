@@ -177,9 +177,10 @@ const Home = () => {
                 style={{ fontSize: "125px", border: "1px solid #ccc" }}
               />
               <p className="mt-4 font-weight-bold">
-                Jos, Plateau state, Nigeria
-              </p>
-              <p>Kuru, Trade center</p>
+           
+              Contact us
+             </p>
+              <p>Awka, Anambra state</p>
             </div>
           </div>
           <div className="col-md-7">
